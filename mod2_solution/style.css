@@ -1,0 +1,111 @@
+* { 
+    box-sizing: border-box;
+}
+body {
+    background-color:white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+h1 { 
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px; 
+}
+
+section { 
+    position: relative;
+    padding: 10px;
+    width: 90%;
+}
+div { 
+    background-color: lightgrey;
+    border-style: solid;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+p { 
+    position: relative; 
+    clear: right;  
+}
+.desc { 
+    padding-top: 20px; 
+    text-align: center;
+    overflow: auto;
+    margin: 5px; 
+    height: 200px; 
+    overflow: auto; 
+}
+.chicken { 
+    border-style: solid;
+    float: right; 
+    background-color: pink; 
+    width: 100px;
+    text-align: center;
+    padding: 10px; 
+    margin: 0px -1px 0px 0px;
+    border-top: none;
+    
+  }
+.beef { 
+    border-style: solid;
+    float: right; 
+    background-color:red; 
+    width: 100px;
+    text-align: center;
+    padding: 10px; 
+    margin: 0px -1px 0px 0px;
+    border-top: none;
+    color: white; 
+    border-color: black;
+}
+.sushi { 
+    border-style: solid;
+    float: right; 
+    background-color: yellow; 
+    width: 100px;
+    text-align: center;
+    padding: 10px; 
+    margin: 0px -1px 0px 0px;
+    border-top: none;
+}
+
+.row { 
+    width: 90%;
+}
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    .col-md-6 { 
+        margin-left: auto;
+        margin-right: auto;
+        float: left; 
+        width: 50%; 
+    }
+    .col-md-12 { 
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        width: 100%;
+    }
+
+    .col-md-12 .desc { 
+        height: 120px; 
+    }
+}
+
+@media (max-width: 767px) { 
+    .col-sm-12 { 
+        float: left; 
+        width: 100%;
+    }
+    .col-sm-12 .desc { 
+        height: 150px; 
+    }
+}
